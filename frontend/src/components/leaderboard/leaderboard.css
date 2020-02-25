@@ -1,0 +1,17 @@
+/*
+ * leaderboard css File
+*/
+.leaderboard{
+  margin: 20px 0 0 0;
+}
+.leaderboard-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.leaderboard-header{
+  font-size: 19px;
+  font-weight: bold;
+}

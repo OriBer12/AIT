@@ -1,0 +1,41 @@
+/*
+ * Dashboard css File
+*/
+
+.Dashboard {
+    /* propertys here */
+}
+.Container{
+
+}
+.row{
+
+}
+
+.col{
+  padding: 5px;
+}
+
+.dashboard-card{
+  margin: 20px 0 20px 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    transition: box-shadow 83ms;
+}
+
+.dashboard-card-title{
+  padding: 12px;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.dashboard-card-footer{
+  height: 40px;
+  background-color: white;
+}
+
+.dashboard-card-footer-header{
+  text-align: center;
+  color: #0073B1;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

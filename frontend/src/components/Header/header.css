@@ -1,0 +1,16 @@
+/*
+ * header css File
+*/
+
+.header {
+    display: flex;
+    height: 77px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+  height: 77px;
+    background-color: #333333 !important;
+}

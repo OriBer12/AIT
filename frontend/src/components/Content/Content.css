@@ -1,0 +1,15 @@
+/*
+ * Content css File
+*/
+
+.Content {
+    display: flex;
+    background-color: #F4F4F4;
+    height: calc(100% - 77px);
+    padding: 50px 0 0 0;
+}
+
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+}
