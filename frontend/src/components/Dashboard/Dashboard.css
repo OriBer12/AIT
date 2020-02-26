@@ -39,3 +39,11 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.inner-col-right{
+  padding: 0 0 0 5px;
+}
+
+.inner-col-left{
+  padding: 0 5px 0 0;
+}

@@ -3,11 +3,13 @@ import './Dashboard.css';
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card';
 
 import Target from '../Target/Target';
 import Carousel from '../carousel/carousel';
-
+import Performance from '../performance/performance';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Dashboard extends Component {
    constructor(props){
      super(props);
@@ -26,10 +28,12 @@ class Dashboard extends Component {
 
   render() {
     return(
-      <div>
-          <Card className="dashboard-card">
-            <Card.Title className="dashboard-card-title">Daily Targets</Card.Title>
+      <Container>
+        <Row>
+            <Card className="dashboard-card">
+            <Card.Title className="dashboard-card-title">My daily targets</Card.Title>
             <Container className="Container">
+
               <Row className="row">
                 {this.targets.map((value, index) => {
                   return <Target key={index} data={value} className="Target"></Target>
@@ -39,9 +43,12 @@ class Dashboard extends Component {
             <Card.Footer className="dashboard-card-footer">
               <p className="dashboard-card-footer-header">show more</p>
             </Card.Footer>
-          </Card>
+            </Card>
+        </Row>
+        <Row>
+          <Col lg="6" className="inner-col-left">
           <Card className="dashboard-card">
-            <Card.Title className="dashboard-card-title">Daily Offers</Card.Title>
+            <Card.Title className="dashboard-card-title">Deal of the day</Card.Title>
             <Container className="Container">
               <Row className="row">
                 <Carousel/>
@@ -52,8 +59,23 @@ class Dashboard extends Component {
             </Card.Footer>
 
           </Card>
+          </Col>
+          <Col lg="6" className="inner-col-right">
+          <Card className="dashboard-card">
+            <Card.Title className="dashboard-card-title">My Performance</Card.Title>
+            <Container className="Container">
+              <Row className="row">
+                <Performance/>
+              </Row>
+            </Container>
+            <Card.Footer className="dashboard-card-footer">
+              <p className="dashboard-card-footer-header">show more</p>
+            </Card.Footer>
 
-      </div>
+          </Card>
+          </Col>
+        </Row>
+      </Container>
   )
   }
 }
