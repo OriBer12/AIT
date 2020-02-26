@@ -48,9 +48,9 @@ class header extends Component {
               <li className="nav-item">
               <div className="icon-container">
               <a className="nav-link" href="#">
-              <FontAwesomeIcon className="icon" icon="lightbulb" />
+              <FontAwesomeIcon className="icon" icon="university" />
               </a>
-              <p>Training</p>
+              <p>Academy</p>
               </div>
               </li>
               <li className="nav-item">
@@ -67,6 +67,15 @@ class header extends Component {
               <FontAwesomeIcon className="icon" icon="envelope" />
               </a>
               <p>Inbox</p>
+              </div>
+              </li>
+              <li className=" account-flex nav-item">
+              <div className="account-container">
+              <p>Hello Bogdan</p>
+              <a className="nav-link" href="#">
+                <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile2.jpg"}/>
+              </a>
+
               </div>
               </li>
             </ul>

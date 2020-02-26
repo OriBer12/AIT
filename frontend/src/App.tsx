@@ -4,10 +4,10 @@ import Content from './components/Content/Content';
 import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLightbulb, faUsers, faEnvelope, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faUsers, faEnvelope, faBell, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faEnvelope, faLightbulb, faUsers, faBell)
+library.add(faEnvelope, faLightbulb, faUsers, faBell,faUniversity)
 
 function App() {
   return (

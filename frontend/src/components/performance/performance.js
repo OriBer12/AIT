@@ -19,9 +19,9 @@ class performance extends Component {
   render() {
     return (
       <div className="performance">
-      <Indicator/>
-      <Indicator/>
-      <Indicator/>
+      <Indicator title="Voice"/>
+      <Indicator title="Accesories"/>
+      <Indicator title="Data"/>
       </div>
     );
   }
