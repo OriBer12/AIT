@@ -9,22 +9,13 @@ import Card from 'react-bootstrap/Card';
 import Target from '../Target/Target';
 import Carousel from '../carousel/carousel';
 import Performance from '../performance/performance';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 class Dashboard extends Component {
    constructor(props){
      super(props);
      this.state = {};
      this.targets = [{"type":"accesories","daily_target":1006,"mtd":"9785","target":12000},{"type":"Business customers","daily_target":1,"mtd":"5","target":11},{"type":"Business customers","daily_target":1,"mtd":"5","target":11}];
    }
-
-  // componentWillMount(){}
-  // componentDidMount(){}
-  // componentWillUnmount(){}
-
-  // componentWillReceiveProps(){}
-  // shouldComponentUpdate(){}
-  // componentWillUpdate(){}
-  // componentDidUpdate(){}
 
   render() {
     return(

@@ -24,7 +24,7 @@ class academy extends Component {
       <Card.Title className="dashboard-card-title">My Academy</Card.Title>
       <Card.Body className="leaderboard-body">
       <YouTube
-        video="un-rfEyPBO4"
+        video="Ff6jaAWkjkM"
       />
       </Card.Body>
       <Card.Footer className="dashboard-card-footer">
