@@ -25,7 +25,7 @@ class Target extends Component {
       <Card className="Target" body>
       <div className="target-container">
         <h1>{this.props.data.daily_target}</h1>
-        <p>New {this.props.data.type} to reach to your monthly target</p>
+        <p>{this.props.data.text}</p>
       </div>
       <div>
         <ProgressBar className="target-progress">
