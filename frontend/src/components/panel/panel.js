@@ -22,7 +22,7 @@ class panel extends Component {
 
   render() {
     return (
-      <Container>
+      <Container className="no-padding">
         <Leaderboards/>
         <Academy/>
       </Container>

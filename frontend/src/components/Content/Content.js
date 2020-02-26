@@ -28,7 +28,7 @@ class Content extends Component {
       <Container>
         <Row>
           <Col lg="9" sm="12"><Dashboard/></Col>
-          <Col lg="3" sm="0" className="d-none d-lg-block"><Panel/></Col>
+          <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel/></Col>
         </Row>
       </Container>
     );
