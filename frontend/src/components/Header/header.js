@@ -35,35 +35,35 @@ class header extends Component {
 
 
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item active">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="nav navbar-nav ml-auto">
+              <li className="nav-item active">
                 <div className="icon-container">
-                <a class="nav-link" href="#">
+                <a className="nav-link" href="#">
                 <FontAwesomeIcon className="icon" icon="users" />
                 </a>
                 <p>Peers</p>
                 </div>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
               <div className="icon-container">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
               <FontAwesomeIcon className="icon" icon="lightbulb" />
               </a>
               <p>Training</p>
               </div>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
               <div className="icon-container">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
               <FontAwesomeIcon className="icon" icon="bell" />
               </a>
               <p>Alert</p>
               </div>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
               <div className="icon-container">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
               <FontAwesomeIcon className="icon" icon="envelope" />
               </a>
               <p>Inbox</p>
