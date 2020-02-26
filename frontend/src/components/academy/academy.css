@@ -5,3 +5,11 @@
 .academy {
     /* propertys here */
 }
+
+.academy-body{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5px;
+  height: 340px;
+}
