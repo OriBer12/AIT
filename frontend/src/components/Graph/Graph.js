@@ -40,6 +40,8 @@ class Graph extends Component {
   render() {
     const options = {
       title: "",
+      hAxis: { title: "Date", viewWindow: { min: 0, max: 15 } },
+      
       curveType: "function",
       legend: { position: "bottom" }
     };    return (

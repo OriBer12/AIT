@@ -16,10 +16,10 @@ class Dashboard extends Component {
      super(props);
      this.state = {};
      this.targets = [
-       {"type":"accesories","daily_target":200,"text":"Device to sell","mtd":"9785","target":12000},
+       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"9785","target":12000},
        {"type":"Business customers","daily_target":300,"text":"Accessories to sell ","mtd":"5","target":11},
-       {"type":"Business customers","daily_target":10,"text":"New Consumers","mtd":"5","target":11},
-       {"type":"Business customers","daily_target":25,"text":"New Business Customers","mtd":"5","target":11}];
+       {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"5","target":11},
+       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"5","target":11}];
    }
 
   render() {

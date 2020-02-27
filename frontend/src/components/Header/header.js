@@ -26,12 +26,19 @@ class header extends Component {
         <Navbar.Brand href="#home">
         <img
           alt=""
-          src={process.env.PUBLIC_URL + "/" + "vodafone_logo.png"}
-          width="100"
-
+          src={process.env.PUBLIC_URL + "/" + "download.png"}
+          width="50"
+          height="50"
           className="d-inline-block align-top"
         />{' '}
           </Navbar.Brand>
+          <div className="account-container">
+          <p>Hello Bogdan</p>
+          <a className="nav-link" href="#">
+            <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile2.JPG"}/>
+          </a>
+
+          </div>
 
 
 
@@ -42,7 +49,7 @@ class header extends Component {
                 <a className="nav-link" href="#">
                 <FontAwesomeIcon className="icon" icon="users" />
                 </a>
-                <p>Peers</p>
+                <p>My peers</p>
                 </div>
               </li>
               <li className="nav-item">
@@ -58,7 +65,7 @@ class header extends Component {
               <a className="nav-link" href="#">
               <FontAwesomeIcon className="icon" icon="bell" />
               </a>
-              <p>Alert</p>
+              <p>Alerts</p>
               </div>
               </li>
               <li className="nav-item">
@@ -71,7 +78,6 @@ class header extends Component {
               </li>
               <li className=" account-flex nav-item">
               <div className="account-container">
-              <p>Hello Bogdan</p>
               <a className="nav-link" href="#">
                 <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile2.JPG"}/>
               </a>
