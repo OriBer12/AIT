@@ -64,14 +64,6 @@ class header extends Component {
               <p>Alerts</p>
               </div>
               </li>
-              <li className="nav-item">
-              <div className="icon-container">
-              <a className="nav-link" href="#">
-              <FontAwesomeIcon className="icon" icon="envelope" />
-              </a>
-              <p>Inbox</p>
-              </div>
-              </li>
               <li className=" account-flex nav-item">
               <div className="account-container">
               <a className="nav-link" href="#">
