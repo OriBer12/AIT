@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Target from '../Target/Target';
 import Carousel from '../carousel/carousel';
 import Performance from '../performance/performance';
+import Panel from '../panel/panel';
 
 class Dashboard extends Component {
    constructor(props){
@@ -23,6 +24,11 @@ class Dashboard extends Component {
 
   render() {
     return(
+      <Container>
+        <Row>
+
+          <Col lg="9" sm="12">
+
       <Container>
         <Row>
             <Card className="dashboard-card">
@@ -71,6 +77,12 @@ class Dashboard extends Component {
           </Col>
         </Row>
       </Container>
+      </Col>
+
+      <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel/></Col>
+    </Row>
+  </Container>
+
   )
   }
 }

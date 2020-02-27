@@ -7,7 +7,10 @@ import LeaderBoard from '../leaderboard/leaderboard';
 class leaderboards extends Component {
    constructor(props){
      super(props);
-     this.data = [{"title":"LeaderBoard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},{"name":"Alina Cebanu","score":"289","profile_img":"profile2.jpg"},{"name":"You","score":"250","profile_img":"profile3.jpg"}]}];
+     this.data = [
+       {"title":"LeaderBoard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},
+       {"name":"Alina Cebanu","score":"289","profile_img":"profile2.jpg"},
+       {"name":"You","score":"250","profile_img":"profile3.jpg"}]}];
    }
 
   // componentWillMount(){}

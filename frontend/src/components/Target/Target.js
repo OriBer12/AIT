@@ -4,6 +4,8 @@ import './Target.css';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { Redirect } from 'react-router';
+
 class Target extends Component {
     constructor(props){
      super(props);
@@ -19,10 +21,20 @@ class Target extends Component {
   // componentWillUpdate(){}
   // componentDidUpdate(){}
 
+  handleOnClick = () => {
+    // some action...
+    // then redirect
+    this.setState({redirect: true});
+  }
+
   render() {
+    if (this.state.redirect) {
+      return <Redirect push to="/sample" />;
+    }
+
     return (
       <Col className="col" sm="12" lg="6" >
-      <Card className="Target" body>
+      <Card className="Target" onClick={this.handleOnClick} body>
       <div className="target-container">
         <h1>{this.props.data.daily_target}</h1>
         <p>{this.props.data.text}</p>
