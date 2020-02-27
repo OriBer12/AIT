@@ -9,7 +9,7 @@ class leaderboards extends Component {
      super(props);
      this.data = [
        {"title":"LeaderBoard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},
-       {"name":"Alina Cebanu","score":"289","profile_img":"profile2.jpg"},
+       {"name":"Alina Cebanu","score":"289","profile_img":"profile2.JPG"},
        {"name":"You","score":"250","profile_img":"profile3.jpg"}]}];
    }
 
