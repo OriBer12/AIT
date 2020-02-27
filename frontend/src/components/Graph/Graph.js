@@ -25,7 +25,8 @@ class Graph extends Component {
 
       curveType: "function",
       legend: { position: "bottom" }
-    };    return (
+    };
+    return (
       <div className={"my-pretty-chart-container"}>
         <Chart
           chartType= {this.props.type}
