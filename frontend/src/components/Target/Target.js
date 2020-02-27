@@ -29,7 +29,7 @@ class Target extends Component {
 
   render() {
     if (this.state.redirect) {
-      return <Redirect push to="/sample" />;
+      return <Redirect push to="/dashboard/target" />;
     }
 
     return (

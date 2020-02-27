@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header/header';
-import Content from './components/Content/Content';
+import Content from './pages/Content/Content';
 import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';

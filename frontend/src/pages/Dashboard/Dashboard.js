@@ -6,10 +6,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card';
 
-import Target from '../Target/Target';
-import Carousel from '../carousel/carousel';
-import Performance from '../performance/performance';
-import Panel from '../panel/panel';
+import Target from '../../components/Target';
+import Carousel from '../../components/carousel';
+import Performance from '../../components/performance';
+import Panel from '../../components/panel';
 
 class Dashboard extends Component {
    constructor(props){

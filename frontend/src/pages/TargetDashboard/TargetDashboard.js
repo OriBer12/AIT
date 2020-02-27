@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import './Content.css';
+import './TargetDashboard.css';
 
-
-import {Route, NavLink, HashRouter} from "react-router-dom";
-import Dashboard from '../Dashboard/Dashboard';
-
-
-class Content extends Component {
+class TargetDashboard extends Component {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -23,11 +18,9 @@ class Content extends Component {
 
   render() {
     return (
-          <HashRouter>
-          <Route path="/dashboard" component={Dashboard}/>
-          </HashRouter>
+      <div>TARGET</div>
     );
   }
 }
 
-export default Content;
+export default TargetDashboard;
