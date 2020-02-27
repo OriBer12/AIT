@@ -34,10 +34,6 @@ class header extends Component {
           </Navbar.Brand>
           <div className="account-container">
           <p>Hello Bogdan</p>
-          <a className="nav-link" href="#">
-            <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile2.JPG"}/>
-          </a>
-
           </div>
 
 
