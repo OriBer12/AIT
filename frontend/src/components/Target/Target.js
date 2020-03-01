@@ -36,14 +36,19 @@ class Target extends Component {
       <Col className="col" sm="12" lg="6" >
       <Card className="Target" onClick={this.handleOnClick} body>
       <div className="target-container">
-        <h1>{this.props.data.daily_target}</h1>
-        <p>{this.props.data.text}</p>
+        <div className="card-header-container">
+          <h1>{this.props.data.daily_target}</h1>
+          <p>{this.props.data.text}</p>
+        </div>
       </div>
-      <div>
+      <div className="card-footer-container">
         <ProgressBar className="target-progress">
           <ProgressBar variant="success" now={(this.props.data.mtd/this.props.data.target)*100} key={1} />
           <ProgressBar variant="danger" now={100 -(this.props.data.mtd/this.props.data.target)*100} key={3} />
         </ProgressBar>
+        <div className="card-footer-text">
+          <p>out of {this.props.data.target}</p>
+        </div>
       </div>
       </Card>
       </Col>

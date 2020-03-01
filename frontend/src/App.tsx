@@ -12,8 +12,8 @@ library.add(faEnvelope, faLightbulb, faUsers, faBell,faUniversity, faEllipsisH)
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Content />
+      <Header/>
+      <Content/>
     </div>
   );
 }

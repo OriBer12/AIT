@@ -23,7 +23,7 @@ class panel extends Component {
   render() {
     return (
       <Container className="no-padding">
-        <Leaderboards/>
+        <Leaderboards data={this.props.data}/>
         <Academy/>
       </Container>
     );

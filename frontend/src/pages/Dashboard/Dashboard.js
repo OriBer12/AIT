@@ -17,12 +17,18 @@ class Dashboard extends Component {
      super(props);
      this.state = {};
      this.targets = [
-       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"1000","target":12000},
-       {"type":"Business customers","daily_target":300,"text":"Accessories to sell ","mtd":"5","target":11},
-       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"8","target":11},
-       {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"5","target":11},
+
+       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"200","target":800},
+       {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"10","target":50},
+       {"type":"Business customers","daily_target":600,"text":"Accessories to sell ","mtd":"600","target":1250},
+       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"25","target":50},
      ];
 
+     this.leaderbord = [
+         {"title":"LeaderBoard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},
+         {"name":"Alina Cebanu","score":"289","profile_img":"profile2.JPG"},
+         {"name":"You","score":"250","profile_img":"profile3.jpg"}]}
+     ]
    }
 
   render() {
@@ -83,7 +89,7 @@ class Dashboard extends Component {
       </Container>
       </Col>
 
-      <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel/></Col>
+      <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel data={this.leaderbord}/></Col>
     </Row>
   </Container>
 

@@ -7,10 +7,7 @@ import LeaderBoard from '../leaderboard/leaderboard';
 class leaderboards extends Component {
    constructor(props){
      super(props);
-     this.data = [
-       {"title":"LeaderBoard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},
-       {"name":"Alina Cebanu","score":"289","profile_img":"profile2.JPG"},
-       {"name":"You","score":"250","profile_img":"profile3.jpg"}]}];
+
    }
 
   // componentWillMount(){}
@@ -25,7 +22,7 @@ class leaderboards extends Component {
   render() {
     return (
       <div>
-      {this.data.map((value, index) => {
+      {this.props.data.map((value, index) => {
         return <LeaderBoard key={index} title={value.title} board={value.board}/>
       })}
       </div>
