@@ -4,6 +4,7 @@ import './Target.css';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Redirect } from 'react-router';
 
 class Target extends Component {
@@ -32,9 +33,14 @@ class Target extends Component {
       return <Redirect push to="/dashboard/target" />;
     }
 
+    console.log(JSON.stringify(this.props.data));
     return (
       <Col className="col" sm="12" lg="6" >
       <Card className="Target" onClick={this.handleOnClick} body>
+      <Card.Header className="card-header">
+        <FontAwesomeIcon className="target-icon icon" icon={this.props.data.icon} />
+        <p className="target-header-text">{this.props.data.header}</p>
+      </Card.Header>
       <div className="target-container">
         <div className="card-header-container">
           <h1>{this.props.data.daily_target}</h1>

@@ -18,10 +18,10 @@ class Dashboard extends Component {
      this.state = {};
      this.targets = [
 
-       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"200","target":800},
-       {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"10","target":50},
-       {"type":"Business customers","daily_target":600,"text":"Accessories to sell ","mtd":"600","target":1250},
-       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"25","target":50},
+       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"200","target":800,"header":"Device","icon":"mobile"},
+       {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"10","target":50,"header":"Consumers","icon":"user"},
+       {"type":"Business customers","daily_target":600,"text":"Accessories to sell ","mtd":"600","target":1250,"header":"Accessories","icon":"keyboard"},
+       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"25","target":50,"header":"Business","icon":"briefcase"},
      ];
 
      this.leaderbord = [

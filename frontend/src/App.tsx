@@ -4,10 +4,10 @@ import Content from './pages/Content/Content';
 import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLightbulb, faUsers, faEnvelope, faBell, faUniversity, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faUsers,faUser ,faEnvelope, faBell, faUniversity, faEllipsisH, faMobile, faBriefcase, faDownload,faKeyboard } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faEnvelope, faLightbulb, faUsers, faBell,faUniversity, faEllipsisH)
+library.add(faEnvelope, faLightbulb, faUsers, faBell,faUniversity, faEllipsisH, faMobile,faBriefcase,faDownload,faKeyboard,faUser)
 
 function App() {
   return (

@@ -99,8 +99,6 @@ class Graph extends Component {
         </Row>
       </Container>
       </Col>
-
-      <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel data={this.leaderbord}/></Col>
     </Row>
   </Container>
 
