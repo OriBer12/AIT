@@ -26,7 +26,7 @@ class Content extends Component {
           <HashRouter>
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route path="/dashboard/target" component={TargetDashboard}/>
-          <Route path="/graph" component={Graph}/>
+          <Route path="/asm/dashboard" component={Graph}/>
           </HashRouter>
     );
   }
