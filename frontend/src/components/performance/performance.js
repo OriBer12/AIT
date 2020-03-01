@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './performance.css';
 import Indicator from '../indicator/indicator';
+
 class performance extends Component {
-  // constructor(props){
-    // super(props);
+   constructor(props){
+     super(props);
     // this.state = {};
-  // }
+   }
 
   // componentWillMount(){}
   // componentDidMount(){}
@@ -19,9 +20,9 @@ class performance extends Component {
   render() {
     return (
       <div className="performance">
-      <Indicator title="Voice"/>
-      <Indicator title="Accesories"/>
-      <Indicator title="Data"/>
+      {this.props.data.map((value, index) => {
+        return <Indicator key={index} title={value.title}  mtd={value.mtd} RR={value.RR} target={value.target} caption={value.caption}/>
+      })}
       </div>
     );
   }

@@ -37,10 +37,15 @@ const bar=[
     ['Samsung S20', 30, 28]
   ];
 class TargetDashboard extends Component {
-  // constructor(props){
-    // super(props);
-    // this.state = {};
-  // }
+   constructor(props){
+     super(props);
+     this.leaderbord = [
+         {"title":"Devices Leaderboard","board":[{"name":"Alexandra Frunza","score":"1250","profile_img":"profile1.jfif"},
+         {"name":"Alina Cebanu","score":"1189","profile_img":"profile2.JPG"},
+         {"name":"Romina Sandu","score":"1170","profile_img":"profile3.jpg"}]}
+     ]
+
+   }
 
   // componentWillMount(){}
   // componentDidMount(){}
@@ -101,7 +106,7 @@ class TargetDashboard extends Component {
         </Container>
         </Col>
 
-        <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel/></Col>
+        <Col lg="3" sm="0" className="no-padding d-none d-lg-block"><Panel data={this.leaderbord}/></Col>
       </Row>
     </Container>
 

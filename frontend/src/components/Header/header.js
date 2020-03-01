@@ -67,7 +67,7 @@ class header extends Component {
               <li className=" account-flex nav-item">
               <div className="account-container">
               <a className="nav-link" href="#">
-                <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile2.JPG"}/>
+                <img className="account-img" src={process.env.PUBLIC_URL + "/" + "profile4.png"}/>
               </a>
 
               </div>

@@ -43,7 +43,10 @@ class carousel extends Component {
    constructor(props){
      super(props);
      this.state = {};
-     this.data = [{"img": "s10_200_200.png","name": "Samsung S10","offer": "10% Discount"},{"img": "airpods.jpg","name": "Airpods","offer": "10% Discount"}]
+     this.data = [
+       {"img": "s10_200_200.png","name": "New Samsung S20 Ultra","offer": "Pre order "},
+       {"img": "airpods.jpg","name": "Have you offered AirPods today?","offer": "They’re at 10% Discount"}
+     ]
    }
 
   // componentWillMount(){}
