@@ -26,10 +26,11 @@ class Content extends Component {
   render() {
     return (
           <HashRouter>
-          <Route exact path="/dashboard" component={Dashboard}/>
-          <Route path="/dashboard/target" component={TargetDashboard}/>
-          <Route path="/academy" component={Academy}/>
-          <Route path="/asm/dashboard" component={Graph}/>
+            <Route exact path="/" component={Dashboard}/>
+            <Route path="/dashboard/target" component={TargetDashboard}/>
+              <Route exact path="/dashboard" component={Dashboard}/>
+            <Route path="/academy" component={Academy}/>
+            <Route path="/asm/dashboard" component={Graph}/>
           </HashRouter>
     );
   }
