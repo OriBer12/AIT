@@ -32,11 +32,11 @@ const line = [
 ];
 const bar=[
     ["Device","Me","Avg. Group"],
-    ['Upsell', 20, 30],
-    ['Downsell', 30, 28],
-    ['Renewals', 70, 60]
+    ['iPhone 11 Pro', 20, 30],
+    ['Samsun S20', 30, 28]
+
   ];
-  
+
 class TargetDashboard extends Component {
    constructor(props){
      super(props);
