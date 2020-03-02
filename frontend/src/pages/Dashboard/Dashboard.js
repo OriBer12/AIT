@@ -32,13 +32,15 @@ class Dashboard extends Component {
      ]
 
      this.performance = [
-       {"title":"Voice","mtd":10, "RR": 50, "target":40,"caption": 200},
-       {"title":"Data","mtd":30, "RR": 60, "target":10,"caption": 150},
-       {"title":"Accessories","mtd":50, "RR": 20, "target":30,"caption": 800}
+       {"title":"Data","mtd":10, "RR": 50, "target":90,"caption": 200},
+       {"title":"Broadband","mtd":30, "RR": 60, "target":70,"caption": 150},
+       {"title":"Upsell","mtd":50, "RR": 20, "target":50,"caption": 800},
+       {"title":"Pre-Paid","mtd":70, "RR": 20, "target":30,"caption": 800},
+       {"title":"Renewals","mtd":90, "RR": 20, "target":10,"caption": 800}
      ]
 
      this.offers = [
-       {"img": "s10_200_200.png","name": "New Samsung S20 Ultra","offer": "Pre order "},
+       {"img": "s10_200_200.png","name": "New Samsung S20","offer": "Get your customers to pre order!"},
        {"img": "airpods.jpg","name": "Have you offered AirPods today?","offer": "They’re at 10% Discount"}
      ]
    }
