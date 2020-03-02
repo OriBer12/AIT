@@ -23,7 +23,7 @@ class video extends Component {
       <YouTube
         video="Ff6jaAWkjkM"
       />
-      <p>Watch the latest Samsun S20 review</p>
+      <p>Watch the latest Samsung S20 review</p>
       </div>
     );
   }

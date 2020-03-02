@@ -28,11 +28,17 @@
   border-bottom: 1px solid #e6e9ec;
 }
 
+.dashboard-card-title span{
+  position: absolute;
+    right: 20px;
+}
 .dashboard-card-footer{
   height: 40px;
   background-color: white;
 }
-
+.my-card-header{
+  background-color: white !important;
+}
 .dashboard-card-footer-header{
   text-align: center;
   color: #0073B1;

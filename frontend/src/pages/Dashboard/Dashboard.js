@@ -11,6 +11,7 @@ import Target from '../../components/Target';
 import Carousel from '../../components/carousel';
 import Performance from '../../components/performance';
 import Panel from '../../components/panel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Dashboard extends Component {
    constructor(props){
@@ -18,10 +19,10 @@ class Dashboard extends Component {
      this.state = {};
      this.targets = [
 
-       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"200","target":800,"header":"Device","icon":"mobile"},
+       {"type":"accesories","daily_target":200,"text":"Devices to sell","mtd":"200","target":800,"header":"Devices","icon":"mobile"},
        {"type":"Business customers","daily_target":10,"text":"New Consumers to Onboard","mtd":"10","target":50,"header":"Consumers","icon":"user"},
        {"type":"Business customers","daily_target":600,"text":"Accessories to sell ","mtd":"600","target":1250,"header":"Accessories","icon":"keyboard"},
-       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"25","target":50,"header":"Business","icon":"briefcase"},
+       {"type":"Business customers","daily_target":25,"text":"New Business Customers to Onboard","mtd":"25","target":50,"header":"Businesses","icon":"briefcase"},
      ];
 
      this.leaderbord = [
@@ -52,7 +53,7 @@ class Dashboard extends Component {
       <Container>
         <Row>
             <Card className="dashboard-card">
-            <Card.Title className="dashboard-card-title">My Daily Targets </Card.Title>
+            <Card.Title className="dashboard-card-title">My Daily Targets <span><FontAwesomeIcon className="target-icon icon" icon='ellipsis-h' /></span></Card.Title>
 
             <Container className="Container">
 

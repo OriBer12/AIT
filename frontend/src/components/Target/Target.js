@@ -33,11 +33,10 @@ class Target extends Component {
       return <Redirect push to="/dashboard/target" />;
     }
 
-    console.log(JSON.stringify(this.props.data));
     return (
       <Col className="col" sm="12" lg="6" >
       <Card className="Target" onClick={this.handleOnClick} body>
-      <Card.Header className="card-header">
+      <Card.Header className="my-card-header card-header">
         <FontAwesomeIcon className="target-icon icon" icon={this.props.data.icon} />
         <p className="target-header-text">{this.props.data.header}</p>
       </Card.Header>
