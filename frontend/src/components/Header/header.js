@@ -59,7 +59,7 @@ class header extends Component {
               </li>
               <li className="nav-item">
               <div className="icon-container">
-              <a className="nav-link" href="/academy">
+              <a className="nav-link" href="/#/academy">
               <FontAwesomeIcon className="icon"  icon="university" />
               </a>
               <p>Academy</p>

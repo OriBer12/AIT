@@ -3,7 +3,7 @@ import './Content.css';
 
 
 //import {Route, HashRouter} from "react-router-dom";
-import { Route, Switch } from 'react-router-dom'
+import { Route, HashRouter } from 'react-router-dom'
 import Dashboard from '../Dashboard/Dashboard';
 import TargetDashboard from '../TargetDashboard';
 import Graph from '../Graph/Graph';
@@ -25,12 +25,12 @@ class Content extends Component {
 
   render() {
     return (
-          <Switch>
+          <HashRouter>
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route path="/dashboard/target" component={TargetDashboard}/>
           <Route path="/academy" component={Academy}/>
           <Route path="/asm/dashboard" component={Graph}/>
-          </Switch>
+          </HashRouter>
     );
   }
 }
