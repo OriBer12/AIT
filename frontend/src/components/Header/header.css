@@ -9,7 +9,32 @@
     align-items: center;
     justify-content: center;
 }
+.my_btn{
+  background-color: transparent !important;
+  border:0 !important;
+}
 
+.my_menu{
+      top: 100%;
+      left: -400px;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .25rem;
+}
+.btn-primary{
+  background-color: transparent;
+}
 .navbar {
   height: 77px;
     background-color: #e60000 !important;

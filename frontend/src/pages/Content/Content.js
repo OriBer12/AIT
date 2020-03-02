@@ -7,6 +7,7 @@ import { Route, HashRouter } from 'react-router-dom'
 import Dashboard from '../Dashboard/Dashboard';
 import TargetDashboard from '../TargetDashboard';
 import Graph from '../Graph/Graph';
+import Peers from '../peers/peers';
 import Academy from '../AcademyPage/AcademyPage';
 class Content extends Component {
   // constructor(props){
@@ -28,8 +29,9 @@ class Content extends Component {
           <HashRouter>
             <Route exact path="/" component={Dashboard}/>
             <Route path="/dashboard/target" component={TargetDashboard}/>
-              <Route exact path="/dashboard" component={Dashboard}/>
+            <Route exact path="/dashboard" component={Dashboard}/>
             <Route path="/academy" component={Academy}/>
+            <Route path="/peers" component={Peers}/>
             <Route path="/asm/dashboard" component={Graph}/>
           </HashRouter>
     );

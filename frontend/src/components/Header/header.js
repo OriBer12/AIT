@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Redirect } from 'react-router';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 class header extends Component {
    constructor(props){
@@ -51,7 +52,7 @@ class header extends Component {
             <ul className="nav navbar-nav ml-auto">
               <li className="nav-item active">
                 <div className="icon-container">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/#/peers">
                 <FontAwesomeIcon className="icon" icon="users" />
                 </a>
                 <p>My peers</p>
@@ -67,9 +68,16 @@ class header extends Component {
               </li>
               <li className="nav-item">
               <div className="icon-container">
-              <a className="nav-link" href="#">
-              <FontAwesomeIcon className="icon" icon="bell" />
-              </a>
+              <Dropdown>
+                <Dropdown.Toggle variant="success" bsPrefix="my_btn" id="dropdown-basic">
+                  <FontAwesomeIcon icon="user" />
+                </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Well done! You are already half way to beating your Business Users target!</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Have you checked the new clip on How Best to Sell iPhone11?</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Its Election Day today – We are expecting a surge in customers. Remember to smile</Dropdown.Item>
+                  </Dropdown.Menu>
+              </Dropdown>
               <p>Alerts</p>
               </div>
               </li>
