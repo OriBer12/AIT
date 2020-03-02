@@ -3,6 +3,7 @@ import './header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Redirect } from 'react-router';
 
 class header extends Component {
    constructor(props){
@@ -18,9 +19,17 @@ class header extends Component {
   // shouldComponentUpdate(){}
   // componentWillUpdate(){}
   // componentDidUpdate(){}
+  handleOnClick = () => {
+    // some action...
+    // then redirect
+    this.setState({redirect: true});
+  }
 
   render() {
-    console.log("Render");
+    if (this.state.redirect) {
+      return <Redirect push to="/academy" />;
+    }
+
     return (
       <Navbar variant="dark">
         <Navbar.Brand href="#home">
@@ -50,8 +59,8 @@ class header extends Component {
               </li>
               <li className="nav-item">
               <div className="icon-container">
-              <a className="nav-link" href="#">
-              <FontAwesomeIcon className="icon" icon="university" />
+              <a className="nav-link" href="/academy">
+              <FontAwesomeIcon className="icon"  icon="university" />
               </a>
               <p>Academy</p>
               </div>

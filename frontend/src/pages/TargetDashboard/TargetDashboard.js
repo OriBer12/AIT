@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card';
 
 import Carousel from '../../components/carousel';
-import Performance from '../../components/performance';
 import Panel from '../../components/panel';
 import Graph from '../../components/Graph';
 
@@ -33,9 +32,11 @@ const line = [
 ];
 const bar=[
     ["Device","Me","Avg. Group"],
-    ['iPhone XR', 20, 30],
-    ['Samsung S20', 30, 28]
+    ['Upsell', 20, 30],
+    ['Downsell', 30, 28],
+    ['Renewals', 70, 60]
   ];
+  
 class TargetDashboard extends Component {
    constructor(props){
      super(props);
