@@ -4,7 +4,7 @@
 
 .Target {
   display: flex;
-  height: 150px;
+  height: 170px;
   justify-content: center;
   align-items: center;
   cursor: pointer;

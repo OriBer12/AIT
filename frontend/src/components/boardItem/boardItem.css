@@ -4,7 +4,7 @@
 
 .boardItem {
   display: flex;
-  height: 60px;
+  height: 73px;
   width: 100%;
   align-items:center;
   flex-direction: row;
