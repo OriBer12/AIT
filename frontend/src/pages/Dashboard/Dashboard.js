@@ -28,7 +28,7 @@ class Dashboard extends Component {
      this.leaderbord = [
          {"title":"Leaderboard","board":[{"name":"Edward Florescu","score":"300","profile_img":"profile1.jfif"},
          {"name":"Alina Cebanu","score":"289","profile_img":"profile2.jpg"},
-         {"name":"You","score":"250","profile_img":"profile4.jpg"}]}
+         {"name":"You","score":"250","profile_img":"profile4.png"}]}
      ]
 
      this.performance = [
