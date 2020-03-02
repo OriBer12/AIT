@@ -38,6 +38,7 @@
 }
 .my-card-header{
   background-color: white !important;
+  border-bottom: 0;
 }
 .dashboard-card-footer-header{
   text-align: center;

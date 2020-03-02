@@ -61,10 +61,14 @@
   border-top: 0;
 }
 .card-footer-text{
+  font-size: 15px;
   width: 75%;
   text-align: left;
   color: rgba(0,0,0,0.5);
 
+}
+.card-footer-text p{
+  font-size: 14px;
 }
 h1{
   font-size: 60px;
