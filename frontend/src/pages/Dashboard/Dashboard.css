@@ -25,6 +25,7 @@
 
 .dashboard-card-title{
   padding: 12px;
+  font-weight: bold;
   border-bottom: 1px solid #e6e9ec;
 }
 
