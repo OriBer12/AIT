@@ -42,7 +42,7 @@ class TargetDashboard extends Component {
      super(props);
      this.leaderbord = [
          {"title":"Devices Leaderboard","board":[{"name":"Alexandra Frunza","score":"1250","profile_img":"profile1.jfif"},
-         {"name":"Alina Cebanu","score":"1189","profile_img":"profile2.JPG"},
+         {"name":"Alina Cebanu","score":"1189","profile_img":"profile2.jpg"},
          {"name":"Romina Sandu","score":"1170","profile_img":"profile3.jpg"}]}
      ]
 
