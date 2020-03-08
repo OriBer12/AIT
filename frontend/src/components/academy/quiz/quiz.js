@@ -21,7 +21,7 @@ class quiz extends Component {
       <div className="quiz">
       <img src={process.env.PUBLIC_URL + "/" + "kahoot.png"}/>
         <p>Take the daily quiz
-        Samsung S20 vs. iPhone 11 Pro</p>
+        Samsung S20 vs. Huawei p40 Pro</p>
       </div>
     );
   }

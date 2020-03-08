@@ -45,7 +45,7 @@ class carousel extends Component {
      this.state = {};
      this.data =[
        {"img": "s10_200_200.png","name": "New Samsung S20","offer": "Get your customers to pre order!"},
-       {"img": "airpods.jpg","name": "Have you offered AirPods today?","offer": "They’re at 10% Discount"}
+       {"img": "Galaxy-Buds.jpg","name": "Have you offered Samsung Galaxy Buds today?","offer": "They’re at 10% Discount"}
      ]
    }
 

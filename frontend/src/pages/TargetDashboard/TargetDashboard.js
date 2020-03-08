@@ -32,8 +32,8 @@ const line = [
 ];
 const bar=[
     ["Device","Me","Avg. Group"],
-    ['iPhone 11 Pro', 20, 30],
-    ['Samsun S20', 30, 28]
+    ['Huawei p40 Pro', 20, 30],
+    ['Samsung S20 Ultra 5G', 30, 28]
 
   ];
 
