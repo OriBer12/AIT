@@ -19,51 +19,51 @@ class peers extends Component {
      this.state = {};
 
      this.overall = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"5500"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"4875"},
+       {index: "3", profile: "profile4.png",name: "You","target":"4000"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"3650"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"3000"}
      ];
 
      this.devices = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"1850"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"1600"},
+       {index: "3", profile: "profile4.png",name: "You","target":"1400"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"1100"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"900"}
      ];
 
      this.accessories = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"1500"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"1200"},
+       {index: "3", profile: "profile4.png",name: "You","target":"1100"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"900"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"650"}
      ];
 
      this.upsell = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"1750"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"1600"},
+       {index: "3", profile: "profile4.png",name: "You","target":"1100"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"850"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"500"}
      ];
 
      this.broadband = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"1900"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"1800"},
+       {index: "3", profile: "profile4.png",name: "You","target":"1200"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"800"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"500"}
      ];
 
      this.prepaid = [
-       {index: "1", profile: "profile1.jfif",name: "Alexa Sandu","target":"89%"},
-       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"84%"},
-       {index: "3", profile: "profile4.png",name: "You","target":"83%"},
-       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"79%"},
-       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"72%"}
+       {index: "1", profile: "profile1.jfif",name: "Daniela Sandu","target":"2400"},
+       {index: "2", profile: "profile2.jpg",name: "Ionus Giurescu","target":"2000"},
+       {index: "3", profile: "profile4.png",name: "You","target":"1900"},
+       {index: "4", profile: "profile3.jpg",name: "Simion Apostol","target":"1800"},
+       {index: "5", profile: "profile7.jpg",name: "Vladimir Otvos","target":"1700"}
      ];
 
    }
@@ -76,7 +76,21 @@ class peers extends Component {
   // shouldComponentUpdate(){}
   // componentWillUpdate(){}
   // componentDidUpdate(){}
+  color(index){
+    let ret;
+    switch(index){
+      case 1:
+        ret = 'trophy-icon-silver';
+      break;
+      case 2:
+        ret = 'trophy-icon-bronze';
+      break;
+      default:
+        ret = 'trophy-icon';
 
+    }
+    return ret;
+  }
   render() {
     return (
       <Container>
@@ -92,13 +106,25 @@ class peers extends Component {
             {
               this.overall.map((value,index)=>{
                 return <div className="peers-leaderboard-item">
-                  <p>{value.index}</p>
+                  {
+                    (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                    className={
+                    this.color(index)  + ' trophy-icon icon '
+                    }
+
+                    icon="trophy" />
+
+                  }
                   <img src={process.env.PUBLIC_URL + "/" + value.profile}
                     width="25"
                     height="25"
                   />
                   <p>{value.name}</p>
-                  <p>{value.target}</p>
+                  <div className="points">
+                    <p className="point">{value.target}</p>
+                    <p className="point-header">Points</p>
+                  </div>
+
                 </div>
 
               })
@@ -116,13 +142,25 @@ class peers extends Component {
                 {
                   this.devices.map((value,index)=>{
                     return <div className="peers-leaderboard-item">
-                      <p>{value.index}</p>
+                    {
+                      (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                      className={
+                      this.color(index)  + ' trophy-icon icon '
+                      }
+
+                      icon="trophy" />
+
+                    }
                       <img src={process.env.PUBLIC_URL + "/" + value.profile}
                         width="25"
                         height="25"
                       />
                       <p>{value.name}</p>
-                      <p>{value.target}</p>
+                      <div className="points">
+                        <p className="point">{value.target}</p>
+                        <p className="point-header">Points</p>
+                      </div>
+
                     </div>
 
                   })
@@ -140,13 +178,26 @@ class peers extends Component {
                     {
                       this.accessories.map((value,index)=>{
                         return <div className="peers-leaderboard-item">
-                          <p>{value.index}</p>
+                        {
+                          (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                          className={
+                          this.color(index)  + ' trophy-icon icon '
+                          }
+
+                          icon="trophy" />
+
+                        }
+
                           <img src={process.env.PUBLIC_URL + "/" + value.profile}
                             width="25"
                             height="25"
                           />
                           <p>{value.name}</p>
-                          <p>{value.target}</p>
+                          <div className="points">
+                            <p className="point">{value.target}</p>
+                            <p className="point-header">Points</p>
+                          </div>
+
                         </div>
 
                       })
@@ -166,13 +217,26 @@ class peers extends Component {
           {
             this.upsell.map((value,index)=>{
               return <div className="peers-leaderboard-item">
-                <p>{value.index}</p>
+              {
+                (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                className={
+                this.color(index)  + ' trophy-icon icon '
+                }
+
+                icon="trophy" />
+
+              }
+
                 <img src={process.env.PUBLIC_URL + "/" + value.profile}
                   width="25"
                   height="25"
                 />
                 <p>{value.name}</p>
-                <p>{value.target}</p>
+                <div className="points">
+                  <p className="point">{value.target}</p>
+                  <p className="point-header">Points</p>
+                </div>
+
               </div>
 
             })
@@ -191,13 +255,26 @@ class peers extends Component {
               {
                 this.broadband.map((value,index)=>{
                   return <div className="peers-leaderboard-item">
-                    <p>{value.index}</p>
+                  {
+                    (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                    className={
+                    this.color(index)  + ' trophy-icon icon '
+                    }
+
+                    icon="trophy" />
+
+                  }
+
                     <img src={process.env.PUBLIC_URL + "/" + value.profile}
                       width="25"
                       height="25"
                     />
                     <p>{value.name}</p>
-                    <p>{value.target}</p>
+                    <div className="points">
+                      <p className="point">{value.target}</p>
+                      <p className="point-header">Points</p>
+                    </div>
+
                   </div>
 
                 })
@@ -214,15 +291,26 @@ class peers extends Component {
                   {
                     this.prepaid.map((value,index)=>{
                       return <div className="peers-leaderboard-item">
-                        <p>{value.index}</p>
+                      {
+                        (index >=3) ? <p>{value.index}</p>: <FontAwesomeIcon
+                        className={
+                        this.color(index)  + ' trophy-icon icon '
+                        }
+
+                        icon="trophy" />
+
+                      }
+
                         <img src={process.env.PUBLIC_URL + "/" + value.profile}
                           width="25"
                           height="25"
                         />
                         <p>{value.name}</p>
-                        <p>{value.target}</p>
-                      </div>
-
+                        <div className="points">
+                          <p className="point">{value.target}</p>
+                          <p className="point-header">Points</p>
+                        </div>
+                        </div>
                     })
                   }
                   <Card.Footer className="dashboard-card-footer">

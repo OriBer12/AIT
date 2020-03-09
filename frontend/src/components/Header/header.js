@@ -73,9 +73,41 @@ class header extends Component {
                   <FontAwesomeIcon icon="user" />
                 </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Well done! You are already half way to beating your Business Users target!</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Have you checked the new clip on How Best to Sell iPhone11?</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Its Election Day today – We are expecting a surge in customers. Remember to smile</Dropdown.Item>
+                    <Dropdown.Item href="#/action-1">
+                      <div className="notif">
+                      <FontAwesomeIcon
+                      className=' notif-icon icon '
+                      icon="award" />
+                        <p className="notif-text">Well done! You are already half way to beating your Business Users target!</p>
+                      </div>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">
+                      <div className="notif">
+                      <FontAwesomeIcon
+                      className=' notif-icon icon '
+                      icon="award" />
+                            <p className="notif-text">Well done! You are already half way to beating your Business Users target!</p>
+                        </div>
+                        </Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                    <div className="notif">
+                    <FontAwesomeIcon
+                    className='movie-color notif-icon icon '
+                    icon="film" />
+
+                      <p className="notif-text">Have you checked the new clip on How Best to Sell Samsung S20?</p>
+                      </div>
+                      </Dropdown.Item>
+
+                    <Dropdown.Item href="#/action-3">
+                    <div className="notif">
+                    <FontAwesomeIcon
+                    className=' notif-icon icon '
+                    icon="info" />
+
+                      <p className="notif-text">Its Election Day today – We are expecting a surge in customers. Remember to smile</p>
+                      </div>
+                    </Dropdown.Item>
                   </Dropdown.Menu>
               </Dropdown>
               <p>Alerts</p>

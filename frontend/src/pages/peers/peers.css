@@ -9,7 +9,7 @@
 .peers-leaderboard-item{
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 60px;
   align-items: center;
   flex-direction: row;
   border-bottom: 1px solid rgba(0,0,0,0.5)
@@ -17,6 +17,32 @@
 
 .peers-leaderboard-item  p {
   margin: 0 20px 0 20px;
+}
+
+.trophy-icon-silver{
+  color: silver !important;
+}
+
+.points{
+  display: flex;
+  flex-direction: column;
+  margin-left:auto;
+  align-items: center;;
+  justify-content: center;
+}
+.point{
+
+}
+.point-header{
+  font-size: 13px;
+}
+.trophy-icon-bronze{
+  color: #cc6633 !important;
+}
+.trophy-icon{
+  color: gold;
+  margin: 0 10px 0 17px;
+  font-size: 20px;
 }
 
 .peers-leaderboard-item  p:last-child {
